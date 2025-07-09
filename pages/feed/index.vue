@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-4">
-    <div class="flex flex-col w-2/3 gap-3">
+    <div class="flex flex-col w-2/3 gap-4">
       <RAnnouncement
         text="Não fales neste portal sobre nada que não falasses no podcast do Joe Rogan. A Reconquista sugere conversar cara a cara para proteger a tua privacidade e evitar leaks desnecessários."
       />
@@ -59,7 +59,7 @@
         <template #icon>
           <IconMedalFill />
         </template>
-        <h1>Hello</h1>
+        <PluginRanking :ranking="rankingTest" />
       </RSidePlugin>
     </div>
   </div>
@@ -73,4 +73,32 @@ defineI18nRoute({
 });
 
 const { t } = useI18n();
+
+const rankingTest = [
+  {
+    avatar: "https://picsum.photos/id/237/200/200",
+    name: "Carlos Marques",
+    points: 187,
+  },
+  {
+    avatar: "https://picsum.photos/id/236/200/200",
+    name: "Afonço Gonçalves",
+    points: 177,
+  },
+  {
+    avatar: "https://picsum.photos/id/235/200/200",
+    name: "Marília Marques",
+    points: 143,
+  },
+  {
+    avatar: "https://picsum.photos/id/234/200/200",
+    name: "Migo Teste",
+    points: 122,
+  },
+  {
+    avatar: "https://picsum.photos/id/233/200/200",
+    name: "Rui António",
+    points: 121,
+  },
+];
 </script>
