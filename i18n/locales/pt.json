@@ -1,0 +1,30 @@
+{
+  "name": "Reconquista",
+  "language": "Português",
+  "nav": {
+    "feed": "Fórum",
+    "events": "Eventos",
+    "subscription": "Subscrição",
+    "admin": "Administrador",
+    "settings": "Definições"
+  },
+  "announcement": "Comunicado",
+  "plugins": {
+    "chat": "Chat ao vivo",
+    "events": "Próximos eventos",
+    "map": "Mapa da reconquista",
+    "ranking": "Classificação"
+  },
+  "feed": {
+    "categories": {
+      "general": "Geral",
+      "trends": "Tendências",
+      "district": "Meu distrito"
+    }
+  },
+  "posts": {
+    "editor": {
+      "placeholder": "O que se está a passar?"
+    }
+  }
+}
