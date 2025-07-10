@@ -19,7 +19,7 @@
         src="sword.png"
         alt="Sword"
         width="400"
-        class="transition-transform duration-500 hover:-translate-y-2 z-50"
+        class="transition-transform duration-500 hover:-translate-y-2 z-50 animate-bounce-soft"
       />
       <BackgroundParticles
         class="absolute inset-0 pointer-events-none"
