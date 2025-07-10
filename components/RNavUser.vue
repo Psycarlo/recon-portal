@@ -28,17 +28,17 @@
         <UiDropdownMenuGroup>
           <UiDropdownMenuItem>
             <IconUserLine class="size-4 text-black" />
-            Perfil
+            {{ $t("nav.profile") }}
           </UiDropdownMenuItem>
           <UiDropdownMenuItem>
             <IconMoneyEuroBoxLine class="size-4 text-black" />
-            Subscrição
+            {{ $t("nav.subscription") }}
           </UiDropdownMenuItem>
         </UiDropdownMenuGroup>
         <UiDropdownMenuSeparator />
         <UiDropdownMenuItem class="flex gap-1.5" @click="handleLogout">
           <IconLogoutBoxLine class="size-4 text-black" />
-          Terminar Sessão
+          {{ $t("nav.logout") }}
         </UiDropdownMenuItem>
       </UiDropdownMenuContent>
     </UiDropdownMenuPortal>

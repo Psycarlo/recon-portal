@@ -6,7 +6,13 @@
     "events": "Eventos",
     "subscription": "Subscrição",
     "admin": "Administrador",
-    "settings": "Definições"
+    "settings": "Definições",
+    "profile": "Perfil",
+    "logout": "Terminar sessão",
+    "donations": "Donativos",
+    "points": "Pontos",
+    "notifications": "Notificações",
+    "privateMessages": "Mensagens privadas"
   },
   "announcement": "Comunicado",
   "plugins": {

@@ -6,24 +6,26 @@
       </NuxtLink>
       <ul class="flex gap-8 items-center">
         <li>
-          <UiButton>Donativos</UiButton>
+          <UiButton>
+            {{ $t("nav.donations") }}
+          </UiButton>
         </li>
         <li>
-          <RDropdownMenu tooltip="Notificações">
+          <RDropdownMenu :tooltip="t('nav.notifications')">
             <template #icon>
               <IconNotificationLine />
             </template>
           </RDropdownMenu>
         </li>
         <li>
-          <RDropdownMenu tooltip="Mensagens Privadas">
+          <RDropdownMenu :tooltip="t('nav.privateMessages')">
             <template #icon>
               <IconChatLine />
             </template>
           </RDropdownMenu>
         </li>
         <li class="flex gap-1 font-heading uppercase">
-          <span class="text-[#8B8B8B]">Pontos</span>
+          <span class="text-[#8B8B8B]">{{ $t("nav.points") }}</span>
           <span class="text-white">187</span>
         </li>
         <li>
@@ -40,4 +42,5 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath();
+const { t } = useI18n();
 </script>
