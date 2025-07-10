@@ -36,7 +36,7 @@
           </UiDropdownMenuItem>
         </UiDropdownMenuGroup>
         <UiDropdownMenuSeparator />
-        <UiDropdownMenuItem class="flex gap-1.5">
+        <UiDropdownMenuItem class="flex gap-1.5" @click="handleLogout">
           <IconLogoutBoxLine class="size-4 text-black" />
           Terminar Sessão
         </UiDropdownMenuItem>
@@ -53,4 +53,23 @@ type RNavUserProps = {
 };
 
 defineProps<RNavUserProps>();
+
+const client = useSupabaseClient();
+const router = useRouter();
+
+const loading = ref(false);
+
+async function handleLogout() {
+  loading.value = true;
+
+  const { error } = await client.auth.signOut();
+
+  if (!error) {
+    loading.value = false;
+    router.replace("/");
+    return;
+  }
+
+  // TODO: handle errors
+}
 </script>

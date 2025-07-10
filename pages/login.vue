@@ -1,5 +1,5 @@
 <template>
-  <form class="flex flex-col gap-2 items-center">
+  <form class="flex flex-col gap-2 items-center" @submit.prevent="handleLogin">
     <h1 class="font-bold text-3xl font-heading uppercase">
       {{ $t("auth.login.title") }}
     </h1>
@@ -30,6 +30,27 @@ defineI18nRoute({
   },
 });
 
+const client = useSupabaseClient();
+const router = useRouter();
+
 const email = ref("");
 const password = ref("");
+const loading = ref(false);
+
+async function handleLogin() {
+  loading.value = true;
+
+  const { error } = await client.auth.signInWithPassword({
+    email: email.value,
+    password: password.value,
+  });
+
+  if (!error) {
+    loading.value = false;
+    router.replace("/");
+    return;
+  }
+
+  // TODO: handle errors
+}
 </script>
