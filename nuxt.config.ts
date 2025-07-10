@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/google-fonts",
     "@nuxtjs/supabase",
+    "@nuxt/image",
   ],
   experimental: {
     typedPages: true

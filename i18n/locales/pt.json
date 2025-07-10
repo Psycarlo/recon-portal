@@ -26,5 +26,18 @@
     "editor": {
       "placeholder": "O que se está a passar?"
     }
+  },
+  "auth": {
+    "difficulties": "Dificuldades a iniciar sessão? Envia-nos um e-mail para",
+    "inputs": {
+      "email": "E-mail",
+      "password": "Palavra-passe"
+    },
+    "forgotPassword": "Esqueceste-te da palavra-passe?",
+    "login": {
+      "title": "Iniciar sessão",
+      "description": "Introduz o teu e-mail e palavra-passe",
+      "cta": "Iniciar sessão"
+    }
   }
 }
