@@ -33,13 +33,47 @@
                   </li>
                 </ul>
               </div>
-              <RNotification
-                avatar="https://picsum.photos/id/211/200/200"
-                avatar-fallback="PS"
-                user-name="Carlos Marques"
-                unread
-                :created-at="new Date(1752075002000)"
-              />
+              <UiTabs default-value="all">
+                <UiTabsList
+                  class="[&>*]:py-4 relative border-b w-full flex justify-start"
+                >
+                  <UiTabsTrigger
+                    value="all"
+                    class="font-body capitalize text-sm group"
+                  >
+                    Todas
+                    <span
+                      class="group-data-[state=inactive]:bg-[#868686] text-xs rounded-md text-white bg-black px-1.5 py-0.5"
+                    >
+                      15
+                    </span>
+                  </UiTabsTrigger>
+                  <UiTabsTrigger
+                    value="mention"
+                    class="font-body capitalize text-sm"
+                  >
+                    Mencionado
+                  </UiTabsTrigger>
+                </UiTabsList>
+                <UiTabsContent value="all">
+                  <RNotification
+                    avatar="https://picsum.photos/id/211/200/200"
+                    avatar-fallback="PS"
+                    user-name="Carlos Marques"
+                    unread
+                    :created-at="new Date(1752075002000)"
+                  />
+                </UiTabsContent>
+                <UiTabsContent value="mention">
+                  <RNotification
+                    avatar="https://picsum.photos/id/211/200/200"
+                    avatar-fallback="PS"
+                    user-name="Carlos Daniel"
+                    unread
+                    :created-at="new Date(1752075002000)"
+                  />
+                </UiTabsContent>
+              </UiTabs>
             </div>
           </RDropdownMenu>
         </li>

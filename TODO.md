@@ -3,6 +3,7 @@
 - [ ] Colors
 - [ ] Fix Hardcoded Colors
 - [ ] Spacing
+- [ ] Dark Theme
 
 ### Sidebar
 
