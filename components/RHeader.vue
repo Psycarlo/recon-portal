@@ -15,7 +15,7 @@
             <template #icon>
               <IconNotificationLine />
             </template>
-            <div class="flex flex-col gap-4 px-2 min-w-[320px] max-w-[380px]">
+            <div class="flex flex-col gap-4 min-w-[320px] max-w-[380px]">
               <div class="flex items-center justify-between">
                 <span class="font-heading font-bold uppercase">
                   {{ $t("nav.notifications") }}

@@ -10,7 +10,7 @@
       />
     </UiDropdownMenuTrigger>
     <UiDropdownMenuPortal>
-      <UiDropdownMenuContent align="end" :sideOffset="8">
+      <UiDropdownMenuContent align="end" :sideOffset="8" class="p-0 px-3 pb-2">
         <slot />
       </UiDropdownMenuContent>
     </UiDropdownMenuPortal>

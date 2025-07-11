@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     href="#"
-    class="flex justify-between items-center hover:bg-[#f0f0f0]"
+    class="flex justify-between items-center hover:bg-[#f0f0f0] px-2.5 py-1 rounded-md"
   >
     <div class="flex items-center gap-2">
       <UiAvatar class="size-8 rounded-full">
