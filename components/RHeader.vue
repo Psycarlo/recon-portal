@@ -11,10 +11,36 @@
           </UiButton>
         </li>
         <li>
-          <RDropdownMenu :tooltip="t('nav.notifications')">
+          <RDropdownMenu :tooltip="t('nav.notifications')" has-unread>
             <template #icon>
               <IconNotificationLine />
             </template>
+            <div class="flex flex-col gap-4 px-2 min-w-[320px] max-w-[380px]">
+              <div class="flex items-center justify-between">
+                <span class="font-heading font-bold uppercase">
+                  {{ $t("nav.notifications") }}
+                </span>
+                <ul class="flex items-center gap-1">
+                  <li>
+                    <UiButton variant="ghost" size="icon">
+                      <IconCheckDoubleLine class="size-5" />
+                    </UiButton>
+                  </li>
+                  <li>
+                    <UiButton variant="ghost" size="icon">
+                      <IconSettings4Line class="size-5" />
+                    </UiButton>
+                  </li>
+                </ul>
+              </div>
+              <RNotification
+                avatar="https://picsum.photos/id/211/200/200"
+                avatar-fallback="PS"
+                user-name="Carlos Marques"
+                unread
+                :created-at="new Date(1752075002000)"
+              />
+            </div>
           </RDropdownMenu>
         </li>
         <li>
@@ -22,6 +48,11 @@
             <template #icon>
               <IconChatLine />
             </template>
+            <div class="flex flex-col gap-4 p-2">
+              <span class="font-heading font-bold uppercase">
+                {{ $t("nav.privateMessages") }}
+              </span>
+            </div>
           </RDropdownMenu>
         </li>
         <li class="flex gap-1 font-heading uppercase">

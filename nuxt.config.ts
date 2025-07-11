@@ -42,5 +42,8 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false
   },
+  runtimeConfig: {
+    jwtSecret: process.env.JWT_SECRET
+  },
   devtools: { enabled: true },
 });

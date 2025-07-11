@@ -21,13 +21,13 @@
         </div>
         <ul class="flex gap-4">
           <li>
-            <UiButton variant="ghost" class="gap-1 text-[#9C9C9C] p-0!">
+            <UiButton variant="ghost" class="group gap-1 text-[#9C9C9C] px-2!">
               <IconCommentLine />
               <span class="font-body">{{ nComments }}</span>
             </UiButton>
           </li>
           <li>
-            <UiButton variant="ghost" class="gap-1 text-[#9C9C9C] p-0!">
+            <UiButton variant="ghost" class="group gap-1 text-[#9C9C9C] px-2!">
               <IconHeartLine />
               <span class="font-body">{{ nLikes }}</span>
             </UiButton>

@@ -8,7 +8,6 @@ export const useTabActive = () => {
 
   watch(route, (newRoute) => {
     currentRouteNormalizedName.value = String(newRoute.name).split('___')[0]
-    console.log(currentRouteNormalizedName.value, '< New')
   })
 
   function isTabActive(route: keyof RouteNamedMapI18n) {

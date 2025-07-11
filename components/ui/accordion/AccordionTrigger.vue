@@ -22,7 +22,7 @@ const delegatedProps = reactiveOmit(props, "class");
       v-bind="delegatedProps"
       :class="
         cn(
-          'absolute -top-2 right-2 w-fit focus-visible:border-ring bg-[#F3F3F3] shadow-sm focus-visible:ring-ring/50 flex flex-1 items-start justify-between rounded-sm text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180',
+          'absolute -top-2 right-2 w-fit focus-visible:border-ring bg-[#F3F3F3] hover:bg-[#E6E6E6] shadow-sm focus-visible:ring-ring/50 flex flex-1 items-start justify-between rounded-sm text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180',
           props.class
         )
       "
