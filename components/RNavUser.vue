@@ -47,27 +47,27 @@
 
 <script setup lang="ts">
 type RNavUserProps = {
-  name: string;
-  role: string;
-  email: string;
-};
+  name: string
+  role: string
+  email: string
+}
 
-defineProps<RNavUserProps>();
+defineProps<RNavUserProps>()
 
-const client = useSupabaseClient();
-const router = useRouter();
+const client = useSupabaseClient()
+const router = useRouter()
 
-const loading = ref(false);
+const loading = ref(false)
 
 async function handleLogout() {
-  loading.value = true;
+  loading.value = true
 
-  const { error } = await client.auth.signOut();
+  const { error } = await client.auth.signOut()
 
   if (!error) {
-    loading.value = false;
-    router.replace("/");
-    return;
+    loading.value = false
+    router.replace('/')
+    return
   }
 
   // TODO: handle errors

@@ -30,13 +30,13 @@
 
 <script setup lang="ts">
 type RPostEditorProps = {
-  avatar: string;
-  avatarFallback: string;
-};
+  avatar: string
+  avatarFallback: string
+}
 
-defineProps<RPostEditorProps>();
+defineProps<RPostEditorProps>()
 
-const { t } = useI18n();
+const { t } = useI18n()
 
-const text = ref("");
+const text = ref('')
 </script>

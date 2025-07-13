@@ -15,8 +15,8 @@
 
 <script setup lang="ts">
 type RAnnouncementProps = {
-  text: string;
-};
+  text: string
+}
 
-defineProps<RAnnouncementProps>();
+defineProps<RAnnouncementProps>()
 </script>

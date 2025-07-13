@@ -25,21 +25,21 @@
 
 <script setup lang="ts">
 type RSidePluginProps = {
-  id: string;
-  title: string;
-};
+  id: string
+  title: string
+}
 
-const props = defineProps<RSidePluginProps>();
+const props = defineProps<RSidePluginProps>()
 
-const cookieName = `plugin_${props.id}_state`;
+const cookieName = `plugin_${props.id}_state`
 
-const wasOpened = useCookie<boolean>(cookieName);
-const isOpen = ref(wasOpened.value ? "plugin" : undefined);
+const wasOpened = useCookie<boolean>(cookieName)
+const isOpen = ref(wasOpened.value ? 'plugin' : undefined)
 
 function setCookie(value: string | string[] | undefined) {
   // biome-ignore lint/suspicious/noDocumentCookie: Direct access
   document.cookie = `${cookieName}=${!!value}; path=/; max-age=${
     60 * 60 * 24 * 7
-  }`;
+  }`
 }
 </script>

@@ -68,37 +68,37 @@
 <script setup lang="ts">
 defineI18nRoute({
   paths: {
-    pt: "/forum",
+    pt: '/forum',
   },
-});
+})
 
-const { t } = useI18n();
+const { t } = useI18n()
 
 const rankingTest = [
   {
-    avatar: "https://picsum.photos/id/237/200/200",
-    name: "Carlos Marques",
+    avatar: 'https://picsum.photos/id/237/200/200',
+    name: 'Carlos Marques',
     points: 187,
   },
   {
-    avatar: "https://picsum.photos/id/236/200/200",
-    name: "Afonço Gonçalves",
+    avatar: 'https://picsum.photos/id/236/200/200',
+    name: 'Afonço Gonçalves',
     points: 177,
   },
   {
-    avatar: "https://picsum.photos/id/235/200/200",
-    name: "Marília Marques",
+    avatar: 'https://picsum.photos/id/235/200/200',
+    name: 'Marília Marques',
     points: 143,
   },
   {
-    avatar: "https://picsum.photos/id/234/200/200",
-    name: "Migo Teste",
+    avatar: 'https://picsum.photos/id/234/200/200',
+    name: 'Migo Teste',
     points: 122,
   },
   {
-    avatar: "https://picsum.photos/id/233/200/200",
-    name: "Rui António",
+    avatar: 'https://picsum.photos/id/233/200/200',
+    name: 'Rui António',
     points: 121,
   },
-];
+]
 </script>

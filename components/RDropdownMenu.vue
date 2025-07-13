@@ -23,9 +23,9 @@
 
 <script setup lang="ts">
 type RDropdownMenuProps = {
-  tooltip: string;
-  hasUnread?: boolean;
-};
+  tooltip: string
+  hasUnread?: boolean
+}
 
-defineProps<RDropdownMenuProps>();
+defineProps<RDropdownMenuProps>()
 </script>

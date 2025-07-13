@@ -1,17 +1,15 @@
 <script setup lang="ts">
-import { cn } from "@/lib/utils";
-import { TabsRoot, useForwardPropsEmits } from "reka-ui";
-import type { TabsRootEmits, TabsRootProps } from "reka-ui";
-import { reactiveOmit } from "@vueuse/core";
-import type { HTMLAttributes } from "vue";
+import { cn } from '@/lib/utils'
+import { TabsRoot, useForwardPropsEmits } from 'reka-ui'
+import type { TabsRootEmits, TabsRootProps } from 'reka-ui'
+import { reactiveOmit } from '@vueuse/core'
+import type { HTMLAttributes } from 'vue'
 
-const props = defineProps<
-  TabsRootProps & { class?: HTMLAttributes["class"] }
->();
-const emits = defineEmits<TabsRootEmits>();
+const props = defineProps<TabsRootProps & { class?: HTMLAttributes['class'] }>()
+const emits = defineEmits<TabsRootEmits>()
 
-const delegatedProps = reactiveOmit(props, "class");
-const forwarded = useForwardPropsEmits(delegatedProps, emits);
+const delegatedProps = reactiveOmit(props, 'class')
+const forwarded = useForwardPropsEmits(delegatedProps, emits)
 </script>
 
 <template>

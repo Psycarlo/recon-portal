@@ -55,14 +55,14 @@
 
 <script setup lang="ts">
 type RankingEntry = {
-  avatar: string;
-  name: string;
-  points: number;
-};
+  avatar: string
+  name: string
+  points: number
+}
 
 type PluginRankingProps = {
-  ranking: RankingEntry[];
-};
+  ranking: RankingEntry[]
+}
 
-defineProps<PluginRankingProps>();
+defineProps<PluginRankingProps>()
 </script>

@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import type { HTMLAttributes } from "vue";
-import { useVModel } from "@vueuse/core";
-import { cn } from "@/lib/utils";
+import type { HTMLAttributes } from 'vue'
+import { useVModel } from '@vueuse/core'
+import { cn } from '@/lib/utils'
 
 const props = defineProps<{
-  type?: string;
-  defaultValue?: string | number;
-  modelValue?: string | number;
-  class?: HTMLAttributes["class"];
-}>();
+  type?: string
+  defaultValue?: string | number
+  modelValue?: string | number
+  class?: HTMLAttributes['class']
+}>()
 
 const emits =
-  defineEmits<(e: "update:modelValue", payload: string | number) => void>();
+  defineEmits<(e: 'update:modelValue', payload: string | number) => void>()
 
-const modelValue = useVModel(props, "modelValue", emits, {
+const modelValue = useVModel(props, 'modelValue', emits, {
   passive: true,
   defaultValue: props.defaultValue,
-});
+})
 
-const isPassword = props.type === "password";
-const currentType = ref(!isPassword ? "text" : "password");
-const isShowingPassword = ref(false);
+const isPassword = props.type === 'password'
+const currentType = ref(!isPassword ? 'text' : 'password')
+const isShowingPassword = ref(false)
 </script>
 
 <template>

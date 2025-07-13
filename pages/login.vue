@@ -21,34 +21,34 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: "auth",
-});
+  layout: 'auth',
+})
 
 defineI18nRoute({
   paths: {
-    pt: "/entrar",
+    pt: '/entrar',
   },
-});
+})
 
-const client = useSupabaseClient();
-const router = useRouter();
+const client = useSupabaseClient()
+const router = useRouter()
 
-const email = ref("");
-const password = ref("");
-const loading = ref(false);
+const email = ref('')
+const password = ref('')
+const loading = ref(false)
 
 async function handleLogin() {
-  loading.value = true;
+  loading.value = true
 
   const { error } = await client.auth.signInWithPassword({
     email: email.value,
     password: password.value,
-  });
+  })
 
   if (!error) {
-    loading.value = false;
-    router.replace("/");
-    return;
+    loading.value = false
+    router.replace('/')
+    return
   }
 
   // TODO: handle errors

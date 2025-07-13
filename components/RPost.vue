@@ -39,21 +39,21 @@
 </template>
 
 <script setup lang="ts">
-import { formatTimeAgo } from "@vueuse/core";
+import { formatTimeAgo } from '@vueuse/core'
 
 type RPostProps = {
-  userName: string;
-  userDistrict: string;
-  avatar: string;
-  avatarFallback: string;
-  text?: string;
-  image?: string;
-  nLikes: number;
-  nComments: number;
-  createdAt: Date;
-};
+  userName: string
+  userDistrict: string
+  avatar: string
+  avatarFallback: string
+  text?: string
+  image?: string
+  nLikes: number
+  nComments: number
+  createdAt: Date
+}
 
-const props = defineProps<RPostProps>();
+const props = defineProps<RPostProps>()
 
-const timeAgo = formatTimeAgo(props.createdAt);
+const timeAgo = formatTimeAgo(props.createdAt)
 </script>

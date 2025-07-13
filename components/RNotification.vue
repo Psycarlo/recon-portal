@@ -20,17 +20,17 @@
 </template>
 
 <script setup lang="ts">
-import { formatTimeAgo } from "@vueuse/core";
+import { formatTimeAgo } from '@vueuse/core'
 
 type RNotificationProps = {
-  avatar: string;
-  avatarFallback: string;
-  userName: string;
-  unread?: boolean;
-  createdAt: Date;
-};
+  avatar: string
+  avatarFallback: string
+  userName: string
+  unread?: boolean
+  createdAt: Date
+}
 
-const props = defineProps<RNotificationProps>();
+const props = defineProps<RNotificationProps>()
 
-const timeAgo = formatTimeAgo(props.createdAt);
+const timeAgo = formatTimeAgo(props.createdAt)
 </script>
