@@ -74,6 +74,10 @@ defineI18nRoute({
 
 const { t } = useI18n()
 
+useHead({
+  title: t('nav.feed')
+})
+
 const rankingTest = [
   {
     avatar: 'https://picsum.photos/id/237/200/200',

@@ -18,6 +18,11 @@ export default defineNuxtConfig({
   experimental: {
     typedPages: true
   },
+  app: {
+    head: {
+      titleTemplate: 'Portal RECONQUISTA | %s'
+    }
+  },
   i18n: {
     strategy: "prefix_except_default",
     defaultLocale: "pt",
