@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/supabase",
     "@nuxt/image",
+    "@nuxtjs/seo",
   ],
   experimental: {
     typedPages: true
@@ -49,6 +50,11 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     jwtSecret: process.env.JWT_SECRET
+  },
+  seo: {
+    meta: {
+      description: 'Espaço para comunicação e organização de membros da RECONQUISTA'
+    }
   },
   devtools: { enabled: true },
 });

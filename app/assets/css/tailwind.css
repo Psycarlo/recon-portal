@@ -45,6 +45,7 @@
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-bounce-soft: bounce-soft 4s ease-in-out infinite;
+  --animate-bounce-soft-tilt: bounce-soft-tilt 4s ease-in-out infinite;
 
   @keyframes accordion-down {
     from {
@@ -64,6 +65,18 @@
   }
 
   @keyframes bounce-soft {
+    0%,
+    100% {
+      transform: translateY(-3%) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.9, 0.1, 0.9, 0.1);
+    }
+    50% {
+      transform: translateY(0) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.2, 0.8, 0.3, 1);
+    }
+  }
+
+  @keyframes bounce-soft-tilt {
     0%,
     100% {
       transform: translateY(-7%) rotate(1deg);
