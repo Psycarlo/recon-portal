@@ -83,29 +83,29 @@ onBeforeUnmount(() => {
   window.removeEventListener('resize', initCanvas)
 })
 
-// watch([mouseX, mouseY], () => {
-//   onMouseMove()
-// })
+watch([mouseX, mouseY], () => {
+  onMouseMove()
+})
 
 function initCanvas() {
   resizeCanvas()
   drawParticles()
 }
 
-// function onMouseMove() {
-//   if (canvasRef.value) {
-//     const rect = canvasRef.value.getBoundingClientRect()
-//     const { w, h } = canvasSize
-//     const x = mouseX.value - rect.left - w / 2
-//     const y = mouseY.value - rect.top - h / 2
+function onMouseMove() {
+  if (canvasRef.value) {
+    const rect = canvasRef.value.getBoundingClientRect()
+    const { w, h } = canvasSize
+    const x = mouseX.value - rect.left - w / 2
+    const y = mouseY.value - rect.top - h / 2
 
-//     const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2
-//     if (inside) {
-//       mouse.x = x
-//       mouse.y = y
-//     }
-//   }
-// }
+    const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2
+    if (inside) {
+      mouse.x = x
+      mouse.y = y
+    }
+  }
+}
 
 function resizeCanvas() {
   if (canvasContainerRef.value && canvasRef.value && context.value) {
