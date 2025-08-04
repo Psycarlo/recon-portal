@@ -35,9 +35,6 @@ export default defineNuxtConfig({
         name: "Portuguese",
       },
     ],
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
   },
   googleFonts: {
     families: {
