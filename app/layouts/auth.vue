@@ -21,13 +21,6 @@
         width="400"
         class="transition-transform duration-500 hover:-translate-y-2 z-50 animate-bounce-soft-tilt drop-shadow-md"
       />
-      <BackgroundParticles
-        class="absolute inset-0 pointer-events-none"
-        :quantity="60"
-        :ease="100"
-        color="#FFF"
-        :staticity="10"
-      />
     </div>
   </main>
 </template>
