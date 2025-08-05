@@ -1,6 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 
-import './lib/env'
+// import './lib/env' // https://github.com/nuxt/nuxt/issues/26253
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",

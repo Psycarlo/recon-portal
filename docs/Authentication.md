@@ -19,6 +19,7 @@ We have a nuxt server HTTP endpoint `server/api/auth/send-email` and we use it f
 [auth.hook.send_email]
 enabled = true
 uri = "<uri>"
+secrets = "<secrets>"
 ```
 
 In Brevo, we have a Magic Link Email Template that this endpoint utilizes to send authentication emails to users.
